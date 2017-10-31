@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leyifu.firenewss.view.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/main_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/mainRadioButton"
+                android:checked="true"
+                android:drawableTop="@drawable/main_home"
+                android:text="@string/main_home" />
+
+            <RadioButton
+                android:id="@+id/rb_belle"
+                style="@style/mainRadioButton"
+                android:drawableTop="@drawable/main_belle"
+                android:text="@string/main_belle" />
+
+            <RadioButton
+                android:id="@+id/rb_video"
+                style="@style/mainRadioButton"
+                android:drawableTop="@drawable/main_video"
+                android:text="@string/main_video" />
+
+            <RadioButton
+                android:id="@+id/rb_attention"
+                style="@style/mainRadioButton"
+                android:drawableTop="@drawable/main_attention"
+                android:text="@string/main_attention" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
